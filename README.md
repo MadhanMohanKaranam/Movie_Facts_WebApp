@@ -1,6 +1,6 @@
 # Movie Facts App
 
-Movie Facts is a Netflix-inspired Next.js application that lets users sign in with Google, save their favourite film, and receive AI-generated trivia each time they visit. It uses Prisma with PostgreSQL, integrates TMDB for movie discovery and recommendations, and taps OpenAI for bite-sized fun facts.
+Movie Facts is a Next.js application that lets users sign in with Google, save their favourite film, and receive AI-generated trivia each time they visit. It uses Prisma with PostgreSQL, integrates TMDB for movie discovery and recommendations, and taps OpenAI for bite-sized fun facts.
 
 ## Tech Stack
 
@@ -12,11 +12,11 @@ Movie Facts is a Netflix-inspired Next.js application that lets users sign in wi
 
 ## Features
 
-- Netflix-style landing and dashboard with responsive hero/backdrop imagery
+- landing and dashboard with responsive hero/backdrop imagery
 - Google sign-in; first-time users choose a favourite movie from TMDB search results
 - Favourite movie metadata (title, TMDB ID, poster, backdrop) stored in Postgres
-- AI-powered ìFun Factî card refreshed on demand via OpenAI
-- Personalised ìBecause you likedÖî carousel using TMDB recommendations
+- AI-powered ‚ÄúFun Fact‚Äù card refreshed on demand via OpenAI
+- Personalised ‚ÄúBecause you liked‚Ä¶‚Äù carousel using TMDB recommendations
 
 ## Prerequisites
 
@@ -95,10 +95,10 @@ For Vercel or other platforms:
 ```
 src/
  +- app/
- ¶   +- api/        # Next.js route handlers (auth, fun fact, TMDB search, favorite movie)
- ¶   +- favorite-movie/  # Movie picker flow with TMDB suggestions
- ¶   +- login/      # Netflix-style login page
- ¶   +- page.tsx    # Authenticated dashboard
+ ¬¶   +- api/        # Next.js route handlers (auth, fun fact, TMDB search, favorite movie)
+ ¬¶   +- favorite-movie/  # Movie picker flow with TMDB suggestions
+ ¬¶   +- login/      
+ ¬¶   +- page.tsx    # Authenticated dashboard
  +- components/     # Reusable UI (Navbar, MovieGrid, FunFact, providers)
  +- lib/            # Prisma client, TMDB helpers, movie seed data
 prisma/
@@ -115,4 +115,4 @@ prisma/
 
 ## License
 
-This project is provided as-is for educational purposes. Adapt and redistribute per your organisationís requirements.
+This project is provided as-is for educational purposes. Adapt and redistribute per your organisation‚Äôs requirements.
