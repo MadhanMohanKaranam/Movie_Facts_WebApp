@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "studio": "prisma studio",
+    "dev:all": "concurrently \"npm run dev\" \"npm run studio\""
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.7",
@@ -23,6 +25,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "concurrently": "^9.2.1",
     "eslint": "^9",
     "eslint-config-next": "15.5.3",
     "prisma": "^6.16.2",
